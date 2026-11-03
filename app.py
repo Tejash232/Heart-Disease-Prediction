@@ -22,7 +22,8 @@ st.write("Enter the patient's medical details below.")
 
 # Input fields
 age = st.number_input("Age", 1, 120, 41)
-sex = st.selectbox("Sex", [0, 1])
+sex = st.selectbox("Sex", ["Male", "Female"])
+sex = 1 if sex == "Male" else 0
 cp = st.selectbox("Chest Pain Type (cp)", [0, 1, 2, 3])
 trestbps = st.number_input("Resting Blood Pressure", 50, 250, 130)
 chol = st.number_input("Cholesterol", 50, 600, 204)
